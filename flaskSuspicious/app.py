@@ -34,7 +34,7 @@ def preprocess_frame(frame):
     return frame
 
 def send_screenshot_email(image_path):
-    msg = Message('🚨 Suspicious Activity Detected', recipients=['kunal36khalkar@gmail.com'])  # Change recipient
+    msg = Message('🚨 Suspicious Activity Detected', recipients=[''])  # Change recipient
     msg.body = "Suspicious activity was detected. Screenshot attached."
     
     with open(image_path, 'rb') as f:
